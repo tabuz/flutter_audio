@@ -49,7 +49,9 @@ public class MedcorderAudioPlugin implements MethodCallHandler, EventChannel.Str
   private Activity activity;
 
   MedcorderAudioPlugin(Activity _activity){
+    
     this.activity = _activity;
+    this.context = activity.getApplicationContext();
   }
 
   public static void registerWith(Registrar registrar) {
